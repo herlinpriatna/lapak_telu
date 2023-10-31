@@ -62,6 +62,10 @@ body {
   max-width: 60px;
 }
 
+.card-item {
+  cursor: pointer;
+}
+
 .product-group {
   display: flex;
   justify-content: space-around;
