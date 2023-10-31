@@ -64,8 +64,8 @@
     min-height: -webkit-fill-available;
     font-family:  'Poppins', sans-serif !important;
     font-size: 24px !important;
-  
   }
+ 
   
   html {
     height: -webkit-fill-available;
@@ -79,11 +79,10 @@
     max-height: 100vh;
     overflow-x: auto;
     overflow-y: hidden;
+   
   }
 
-.nav-item {
-  margin-top: 13%;
-}
+
 
 h2 {
   font-weight: bold;
