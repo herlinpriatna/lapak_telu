@@ -7,19 +7,13 @@
     <link rel="stylesheet" href="style/detail_produk.css" />
 
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>Detail | Lapak Tel-U</title>
   </head>
-  <body class="vh-100 overflow-hidder">
+  <body>
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid justify-content-center">
@@ -29,53 +23,27 @@
         </a>
 
         <div class="d-flex flex-column">
-          <a
-            class="text-white fs-5 fw-bold text-start text-decoration-none"
-            href="home_page.html"
-          >
-            LAPAK TEL-U
-          </a>
+          <a class="text-white fs-5 fw-bold text-start text-decoration-none" href="home_page.html"> LAPAK TEL-U </a>
         </div>
 
         <!-- navbar tonggle -->
-        <button
-          class="navbar-toggler shadow-none border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- sidebar -->
-        <div
-          class="sidebar offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
+        <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <!-- sidebar header -->
           <div class="offcanvas-header text-white border-bottom">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              LAPAK TELU
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white shadow-none"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LAPAK TELU</h5>
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
 
           <!-- sidebar body -->
           <div class="offcanvas-body">
-            <ul
-              class="navbar-nav justify-content-center align-item-center flex-grow-1 pe-3"
-            >
+            <ul class="navbar-nav justify-content-center align-item-center flex-grow-1 pe-3">
               <form role="search">
-                <div class="input-group">
+                <div class="input-group my-3">
                   <button class="input-group-text">
                     <img src="img/icon-cari.png" alt="" />
                   </button>
@@ -84,16 +52,8 @@
               </form>
             </ul>
             <div class="d-flex justify-content-center gap-3 pe-4">
-              <a
-                href="postproduk.html"
-                class="text-white text-decoration-none px-3 py-2"
-              >
-                Jual
-              </a>
-              <a
-                href="profile_penjual.html"
-                class="text-white text-decoration-none px-4 py-2"
-              >
+              <a href="postproduk.html" class="text-white text-decoration-none px-3 py-2 mt-3 fw-bold"> <img src="img/icon-upload.png" alt="" class="me-2" />Jual </a>
+              <a href="profile_penjual.html" class="text-white text-decoration-none px-4 py-2">
                 <img src="img/user.png" alt="" width="50px" />
               </a>
             </div>
@@ -102,31 +62,20 @@
       </div>
     </nav>
 
-    <div class="container">
-      <div class="row">
+    <div class="container pt-4 mt-4">
+      <div class="row pt-3 mt-3">
         <div class="col py-3 my-3">
-          <img
-            src="img/detail-sepatu.png"
-            alt="Foto Produk"
-            class="rounded img-fluid"
-            style="height: 100%; width: 100%"
-          />
+          <img src="img/detail-sepatu.png" alt="Foto Produk" class="rounded img-fluid" style="height: 100%; width: 100%" />
         </div>
       </div>
 
       <div class="d-flex justify-content-between">
         <div class="text-md-start">
-          <button type="button" class="btn btn-lg btn-outline-primary">
-            Sepatu
-          </button>
+          <button type="button" class="btn btn-lg btn-outline-primary">Sepatu</button>
         </div>
         <div class="text-md-end">
-          <button type="button" class="btn btn-lg btn-outline-dark">
-            <i class="fas fa-share"></i> Bagikan
-          </button>
-          <button type="button" class="btn btn-lg btn-outline-dark">
-            <i class="fas fa-flag"></i> Laporkan
-          </button>
+          <a href="" type="button" class="btn btn-lg btn-outline-dark"><i class="fas fa-share"></i> Bagikan</a>
+          <a href="" type="button" class="btn btn-lg btn-outline-dark"><i class="fas fa-flag"></i> Laporkan</a>
         </div>
       </div>
 
@@ -142,65 +91,31 @@
         </div>
         <div class="d-flex justify-content-between">
           <div>
-            <button
-              type="button"
-              class="btn btn-lg btn-outline-secondary text-start"
-              style="width: 220px"
-              disabled
-            >
-              Seperti baru
-            </button>
+            <button type="button" class="btn btn-lg btn-outline-secondary text-start" style="width: 220px" disabled>Seperti baru</button>
           </div>
           <div class="">
-            <a
-              href="https://wa.me/6282293393283"
-              type="button"
-              class="btn btn-lg btn-primary fw-bold"
-              >Chat Sekarang</a
-            >
-            <a
-              href=""
-              type="button"
-              class="btn btn-lg btn-outline-primary ms-2 fw-bold"
-              >Simpan</a
-            >
+            <a href="https://wa.me/6282293393283" type="button" class="btn btn-lg btn-primary fw-bold">Chat Sekarang</a>
+            <a href="" type="button" class="btn btn-lg btn-outline-primary ms-1 fw-bold">Simpan</a>
           </div>
         </div>
       </div>
 
-      <div
-        class="box-profil d-flex justify-content-between p-3 align-items-center border rounded my-4"
-      >
+      <div class="box-profil d-flex justify-content-between p-3 align-items-center border rounded my-4">
         <div class="profil d-flex align-items-center">
-          <img
-            src="img/user.png"
-            alt=""
-            class="me-3 img-fluid"
-            style="width: 80px; height: 80px"
-          />
+          <img src="img/user.png" alt="" class="me-3 img-fluid" style="width: 80px; height: 80px" />
           <div class="text">
             <p class="m-0 fs-4 fw-bold">Herdi Ardana</p>
             <p class="m-0 fs-5">@herdiardana33</p>
             <p class="m-0 fs-5">Bandung</p>
           </div>
         </div>
-        <button
-          class="btn btn-primary my-3 fw-bold me-3"
-          style="width: 120px; height: 50px"
-        >
-          Lihat Profil
-        </button>
+        <button class="btn btn-primary my-3 fw-bold me-3" style="width: 120px; height: 50px">Lihat Profil</button>
       </div>
 
       <p class="fs-2 fw-bold py-2">Deskripsi</p>
       <p class="fs-4 pb-5">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       </p>
     </div>
 
@@ -214,19 +129,9 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
-              <img
-                src="img/logo-lapak-telu.png"
-                alt=""
-                width="40%"
-                class="img-fluid mb-3"
-              />
+              <img src="img/logo-lapak-telu.png" alt="" width="40%" class="img-fluid mb-3" />
               <p class="fs-2">Lapak Tel-U</p>
-              <p>
-                Lapak Telkom University merupakan website penyedia forum jual
-                beli untuk membantu menjualbelikan barang bekas
-                (second/preloved) bagi seluruh civitas akademik Telkom
-                University, Bandung.
-              </p>
+              <p>Lapak Telkom University merupakan website penyedia forum jual beli untuk membantu menjualbelikan barang bekas (second/preloved) bagi seluruh civitas akademik Telkom University, Bandung.</p>
             </div>
             <!-- Grid column -->
 
@@ -254,14 +159,10 @@
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">Link</h6>
               <p>
-                <a href="#!" class="text-reset text-decoration-none"
-                  >About Us</a
-                >
+                <a href="#!" class="text-reset text-decoration-none">About Us</a>
               </p>
               <p>
-                <a href="#!" class="text-reset text-decoration-none"
-                  >Settings</a
-                >
+                <a href="#!" class="text-reset text-decoration-none">Settings</a>
               </p>
               <p>
                 <a href="#!" class="text-reset text-decoration-none">Pesanan</a>
@@ -292,10 +193,7 @@
       <!-- Section: Links  -->
 
       <!-- Copyright -->
-      <div
-        class="text-center p-4"
-        style="background-color: rgba(0, 0, 0, 0.05)"
-      >
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
         © 2023 Copyright:
         <a class="text-reset fw-bold" href="#">www.lapaktelu.com</a>
       </div>
