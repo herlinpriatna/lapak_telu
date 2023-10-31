@@ -82,7 +82,9 @@
    
   }
 
-
+  .nav-item {
+    margin-top: 13%;
+  }
 
 h2 {
   font-weight: bold;
