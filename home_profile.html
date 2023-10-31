@@ -31,7 +31,17 @@
       src="https://kit.fontawesome.com/e718798741.js"
       crossorigin="anonymous"
     ></script>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <!--Style-->
     <style>
       /* Mengkustomisasi tombol navigasi carousel */
@@ -61,61 +71,90 @@
       }
     </style>
   </head>
-  <body>
-    <!-- navigasi bar -->
-    <nav
-      class="justify-content-between navbar p-3"
-      style="background-color: #3570d6"
-    >
-      <div class="container-fluid">
-        <!-- setting tulisan lapak telu dan logo -->
-        <a
-          class="navbar-brand fw-bold px-4"
-          href="#"
-          style="color: white; font-family: sans-serif"
-        >
-          <img src="img/logo-lapak-telu.png" alt="Logo" width="60" />
-          LAPAK TEL-U
+  <body class="vh-100 overflow-hidder">
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid justify-content-center">
+        <!-- logo -->
+        <a class="navbar-brand d-flex ps-4" href="home_page.html">
+          <img src="img/logo-lapak-telu.png" alt="" width="60" />
         </a>
-        <!-- setting search bar -->
-        <form
-          class="position-absolute top-50 start-50 translate-middle"
-          role="search"
-        >
-          <div class="input-group" style="width: 400px">
-            <button class="input-group-text">
-              <img src="img/icon-cari.png" alt="" />
-            </button>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Cari"
-              aria-label="Username"
-            />
-          </div>
-        </form>
-        <!-- setting upload dan masuk -->
-        <div class="button px-5">
+
+        <div class="d-flex flex-column">
           <a
-            class="fw-bold px-5"
-            href="#"
-            style="color: white; text-decoration: none"
+            class="text-white fs-5 fw-bold text-start text-decoration-none"
+            href="home_page.html"
           >
-            <img src="img/icon-upload.png" />
-            Upload
+            LAPAK TEL-U
           </a>
-          <a href="/Profile penjual - penjual/index.html"
-            ><img
-              class="img-fluid"
-              src="img/user.png"
-              alt="Foto Profil"
-              style="max-width: 60px"
-          /></a>
+        </div>
+
+        <!-- navbar tonggle -->
+        <button
+          class="navbar-toggler shadow-none border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- sidebar -->
+        <div
+          class="sidebar offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <!-- sidebar header -->
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              LAPAK TELU
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white shadow-none"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <!-- sidebar body -->
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav justify-content-center align-item-center flex-grow-1 pe-3"
+            >
+              <form role="search">
+                <div class="input-group">
+                  <button class="input-group-text">
+                    <img src="img/icon-cari.png" alt="" />
+                  </button>
+                  <input class="form-control" type="text" placeholder="Cari" />
+                </div>
+              </form>
+            </ul>
+            <div class="d-flex justify-content-center gap-3 pe-4">
+              <a
+                href="postproduk.html"
+                class="text-white text-decoration-none px-3 py-2"
+              >
+                Jual
+              </a>
+              <a
+                href="profile_penjual.html"
+                class="text-white text-decoration-none px-4 py-2"
+              >
+                <img src="img/user.png" alt="" width="50px" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
 
-    <header class="container">
+    <header class="container pt-5">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ul class="carousel-indicators" style="list-style: none">
