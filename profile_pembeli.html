@@ -14,8 +14,16 @@
     <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!--Font Awesome-->
@@ -34,21 +42,20 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-
   </head>
-  <body class="vh-100 overflow-hidder"> 
+  <body class="vh-100 overflow-hidder">
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid justify-content-center">
         <!-- logo -->
-        <a class="navbar-brand d-flex ps-4" href="home_page.html">
+        <a class="navbar-brand d-flex ps-4" href="home_profile.html">
           <img src="img/logo-lapak-telu.png" alt="" width="60" />
         </a>
 
         <div class="d-flex flex-column">
           <a
             class="text-white fs-5 fw-bold text-start text-decoration-none"
-            href="home_page.html"
+            href="home_profile.html"
           >
             LAPAK TEL-U
           </a>
@@ -92,7 +99,7 @@
               class="navbar-nav justify-content-center align-item-center flex-grow-1 pe-3"
             >
               <form role="search">
-                <div class="input-group">
+                <div class="input-group my-3">
                   <button class="input-group-text">
                     <img src="img/icon-cari.png" alt="" />
                   </button>
@@ -103,9 +110,9 @@
             <div class="d-flex justify-content-center gap-3 pe-4">
               <a
                 href="postproduk.html"
-                class="text-white text-decoration-none px-3 py-2"
+                class="text-white text-decoration-none px-3 py-2 mt-3 fw-bold"
               >
-                Jual
+                <img src="img/icon-upload.png" alt="" class="me-2" />Jual
               </a>
               <a
                 href="profile_penjual.html"
@@ -119,26 +126,50 @@
       </div>
     </nav>
 
-
     <div class="container-fluid mt-5 pt-5 d-flex col-md-12">
       <div class="row">
-        <div class="d-flex flex-column col-md-4 flex-shrink-0 p-3 text-white" style="width: 270px; margin-left: 10%; height: 65vh; border-radius: 10px; border: 1px solid #d8d8d8; background: #fff; color: black">
-          <a href="/" class="d-flex justify-content-between mb-3 mb-md-0 me-md-auto text-white text-decoration-none"></a>
+        <div
+          class="d-flex flex-column col-md-4 flex-shrink-0 p-3 text-white"
+          style="
+            width: 270px;
+            margin-left: 10%;
+            height: 65vh;
+            border-radius: 10px;
+            border: 1px solid #d8d8d8;
+            background: #fff;
+            color: black;
+          "
+        >
+          <a
+            href="/"
+            class="d-flex justify-content-between mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+          ></a>
           <ul class="nav nav-pills flex-column">
             <li class="d-flex justify-content-center">
               <img src="img/user.png" alt="" width="117" height="122" />
             </li>
 
             <li class="d-flex justify-content-center">
-              <a href="#" class="nav-link link-dark p-1" style="font-size: 20px">Herdi Ardana</a>
+              <a href="#" class="nav-link link-dark p-1" style="font-size: 20px"
+                >Herdi Ardana</a
+              >
             </li>
 
             <li class="d-flex justify-content-center">
-              <a href="#" class="nav-link link-dark p-1" style="font-size: 14px">Apartement Buah Batu</a>
+              <a href="#" class="nav-link link-dark p-1" style="font-size: 14px"
+                >Apartement Buah Batu</a
+              >
             </li>
 
             <div class="d-grid gap-2 col-6 mx-auto">
-              <button type="button" class="btn btn-primary" style="width: 120px">Chat</button>
+              <a
+                href="https:/wa.me/6282246805359"
+                type="button"
+                class="btn btn-primary"
+                style="width: 120px; background-color: #3570d6"
+              >
+                Chat
+              </a>
             </div>
           </ul>
           <hr />
@@ -181,7 +212,11 @@
       </div>
     </div>
 
-    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="sidebars.js"></script>
   </body>
 </html>
