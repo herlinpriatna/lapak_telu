@@ -2,62 +2,42 @@
 /*Import poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/* navigasi */
-.fix{
-  overflow: hidden;
-  position: fixed;
-  background-color: #3570D6;
-
-  top: 0;
-  width: 100%;
-
-  z-index: 100;
+/* === NAVIGASI === */
+body {
+  font-family: sans-serif;
+}
+/* responsif Navbar */
+@media (max-width: 991px) {
+  .navbar .sidebar {
+    background-color: #3570d6;
+  }
 }
 
-.fix a{
-  float: left;
-  display: block;
-  background-color: #3570D6;
-
+.navbar {
+  background-color: #3570d6;
 }
 
-.fix a:hover{
-  background-color: #3570D6;
-
-}
-
-.navbar{
-  background-color: #3570D6;
-}
-
-
-#lapak-telu{
-  color: white; 
+/* Tulisan lapak telu */
+.navbar .navbar-brand {
+  color: rgb(255, 255, 255);
   font-family: sans-serif;
 }
 
-#search{
+/* search bar */
+#search {
   width: 350px;
 }
 
-#upload{
-  color: white;
+/* Upload dan Masuk */
+#upload-login {
+  font-family: sans-serif;
+  color: #3570d6;
+}
+
+.lihat-semua {
+  font-size: 24px;
   text-decoration: none;
 }
-
-#upload{
-  padding-inline: 30px;
-  font-family: sans-serif;
-  font-weight: bold;
-}
-
-#masuk{
-  padding-inline: 30px;
-  color: #3570D6;
-  font-family: sans-serif;
-  font-weight: bold;
-}
-
 .nav-pills {
   background-color:  rgba!important;
     min-height: 100vh;
