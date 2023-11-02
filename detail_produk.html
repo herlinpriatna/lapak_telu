@@ -78,7 +78,7 @@
         </div>
         <div class="text-md-end">
           <button type="button" class="btn btn-lg btn-outline-dark" data-bs-toggle="modal" data-bs-target="#bagikan"><i class="fas fa-share"></i> Bagikan</button>
-          <button type="button" class="btn btn-lg btn-outline-dark"><i class="fas fa-flag"></i> Laporkan</button>
+          <button type="button" class="btn btn-lg btn-outline-dark" data-bs-toggle="modal" data-bs-target="#laporkan"><i class="fas fa-flag"></i> Laporkan</button>
         </div>
       </div>
 
@@ -212,10 +212,10 @@
             <p class="text-center fs-2 fw-bold">Bagikan</p>
             <p class="text-center fs-5 fst-italic">"Hayu, bagikeun supados seueur anu terang"</p>
             <div class="container d-flex">
-              <a href="https://wa.me/" target="_blank" class="btn text-dark"><img src="icon-whatsapp.png" alt="WhatsApp" height="65px" class="pb-2" /> WhatsApp</a>
-              <a href="https://www.instagram.com/" target="_blank" class="btn text-dark"><img src="icon-instagram.png" alt="Instagram" height="65px" class="pb-2" /> Instagram</a>
-              <a href="https://www.facebook.com/" target="_blank" class="btn text-dark"><img src="icon-facebook.png" alt="Facebook" height="65px" class="pb-2" />Facebook</a>
-              <a href="https://twitter.com/" target="_blank" class="btn text-dark"><img src="icon-twitter.png" alt="Twitter" height="65px" class="pb-2" />Twitter </a>
+              <a href="https://wa.me/" target="_blank" class="btn text-dark"><img src="img/icon-whatsapp.png" alt="WhatsApp" height="65px" class="pb-2" /> WhatsApp</a>
+              <a href="https://www.instagram.com/" target="_blank" class="btn text-dark"><img src="img/icon-instagram.png" alt="Instagram" height="65px" class="pb-2" /> Instagram</a>
+              <a href="https://www.facebook.com/" target="_blank" class="btn text-dark"><img src="img/icon-facebook.png" alt="Facebook" height="65px" class="pb-2" />Facebook</a>
+              <a href="https://twitter.com/" target="_blank" class="btn text-dark"><img src="img/icon-twitter.png" alt="Twitter" height="65px" class="pb-2" />Twitter </a>
             </div>
             <div class="container border border-secondary rounded-pill d-flex justify-content-between mt-3" style="width: 500px; height: 48px">
               <p class="text-center fs-6 align-item-center text-secondary py-2"></p>
@@ -244,5 +244,54 @@
       });
     </script>
     <!-- Akhir Modal Bagikan-->
+
+    <!-- Awal Modal Laporkan -->
+    <div class="modal" id="laporkan">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p class="text-center fs-2 fw-bold">Laporkan</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="alasan-laporan" id="produk-palsu" />
+              <label class="form-check-label" for="produk-palsu"> Produk Palsu </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="alasan-laporan" id="produk-ilegal" />
+              <label class="form-check-label" for="produk-ilegal"> Produk ilegal/dilarang </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="alasan-laporan" id="penipuan" />
+              <label class="form-check-label" for="penipuan"> Indikasi penipuan </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="alasan-laporan" id="kata-tidak-pantas" />
+              <label class="form-check-label" for="kata-tidak-pantas"> Mengandung kata yang tidak pantas </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="alasan-laporan" id="salah-kategori" />
+              <label class="form-check-label" for="salah-kategori"> Salah kategori </label>
+            </div>
+            <div class="d-flex justify-content-between mt-4 px-3">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+              <button type="button" class="btn btn-primary" id="submit-button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("submit-button").addEventListener("click", function () {
+        // Cek opsi yang dipilih
+        var selectedOption = document.querySelector('input[name="alasan-laporan"]:checked');
+
+        if (selectedOption) {
+          var selectedValue = selectedOption.nextSibling.textContent;
+          alert("Laporan Anda telah dikirimkan");
+        } else {
+          alert("Silahkan pilih alasan lapor");
+        }
+      });
+    </script>
+    <!-- Akhir Modal Laporkan -->
   </body>
 </html>
