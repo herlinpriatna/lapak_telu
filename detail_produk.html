@@ -211,12 +211,15 @@
           <div class="modal-body">
             <p class="text-center fs-2 fw-bold">Bagikan</p>
             <p class="text-center fs-5 fst-italic">"Hayu, bagikeun supados seueur anu terang"</p>
-            <div class="d-flex justify-content-center">
-              <a href="#" id="copyButton" class="btn btn-link mx-2"><i class="far fa-copy fa-3x"></i> </a>
-              <a href="https://wa.me/" target="_blank" class="btn btn-link mx-2"><i class="fab fa-whatsapp fa-3x"></i> </a>
-              <a href="https://www.instagram.com/" target="_blank" class="btn btn-link mx-2"><i class="fab fa-instagram fa-3x"></i> </a>
-              <a href="https://www.facebook.com/" target="_blank" class="btn btn-link mx-2"><i class="fab fa-facebook fa-3x"></i> </a>
-              <a href="https://twitter.com/" target="_blank" class="btn btn-link mx-2"><i class="fab fa-twitter fa-3x"></i> </a>
+            <div class="container d-flex">
+              <a href="https://wa.me/" target="_blank" class="btn text-dark"><img src="icon-whatsapp.png" alt="WhatsApp" height="65px" class="pb-2" /> WhatsApp</a>
+              <a href="https://www.instagram.com/" target="_blank" class="btn text-dark"><img src="icon-instagram.png" alt="Instagram" height="65px" class="pb-2" /> Instagram</a>
+              <a href="https://www.facebook.com/" target="_blank" class="btn text-dark"><img src="icon-facebook.png" alt="Facebook" height="65px" class="pb-2" />Facebook</a>
+              <a href="https://twitter.com/" target="_blank" class="btn text-dark"><img src="icon-twitter.png" alt="Twitter" height="65px" class="pb-2" />Twitter </a>
+            </div>
+            <div class="container border border-secondary rounded-pill d-flex justify-content-between mt-3" style="width: 500px; height: 48px">
+              <p class="text-center fs-6 align-item-center text-secondary py-2"></p>
+              <button id="copy-button" class="btn btn-link ms-2"><i class="far fa-copy fa-2x"></i></button>
             </div>
           </div>
         </div>
@@ -225,16 +228,18 @@
 
     <script>
       $(document).ready(function () {
-        $("#copyButton").click(function () {
-          var linkToCopy = window.location.href;
+        var currentURL = window.location.href;
 
-          var tempTextarea = document.createElement("textarea");
-          tempTextarea.value = linkToCopy;
-          document.body.appendChild(tempTextarea);
+        $(".text-secondary").text(currentURL);
 
-          tempTextarea.select();
+        $("#copy-button").click(function () {
+          var copyText = document.querySelector(".text-secondary");
+          var range = document.createRange();
+          range.selectNode(copyText);
+          window.getSelection().removeAllRanges();
+          window.getSelection().addRange(range);
           document.execCommand("copy");
-          document.body.removeChild(tempTextarea);
+          window.getSelection().removeAllRanges();
         });
       });
     </script>
