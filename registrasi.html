@@ -44,16 +44,35 @@
               <h2>Daftar</h2>
               <h1 class="fw-bold">LAPAK TEL-U</h1>
             </div>
-            <form action="home_profile.html" method="get">
+
+            <form class="needs-validation" action="home_profile.html" method="get" novalidate>
               <div class="mb-3 text-white">
-                <label for="email" class="form-label">Email/Username</label>
+                <label for="email" class="form-label">Email</label>
                 <input
                   type="text"
                   class="form-control p-2"
                   id="email"
+                  required
                   aria-describedby="emailHelp"
-                  placeholder="Masukkan email/username kamu"
+                  placeholder="Masukkan email kamu"
                 />
+                <div class="invalid-feedback">
+                  Masukan email kamu
+                </div>
+              </div>
+              <div class="mb-3 text-white">
+                <label for="username" class="form-label">Username</label>
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  id="email"
+                  required
+                  aria-describedby="usernaHelp"
+                  placeholder="Masukkan username kamu"
+                />
+                <div class="invalid-feedback">
+                  Masukan Username kamu
+                </div>
               </div>
               <div class="mb-3 text-white">
                 <label for="password" class="form-label">Password</label>
@@ -61,8 +80,12 @@
                   type="password"
                   class="form-control p-2"
                   id="password"
+                  required
                   placeholder="Masukkan password kamu"
                 />
+                <div class="invalid-feedback">
+                  Masukan Password kamu
+                </div>
               </div>
               <div class="mb-3 d-flex justify-content-end">
                 <a
@@ -80,6 +103,8 @@
               <div class="option-text p-4 text-white text-center">
                 <p>atau masuk dengan</p>
               </div>
+
+
               <div
                 class="login-option d-flex justify-content-between text-center"
               >
@@ -111,4 +136,26 @@
       </div>
     </div>
   </body>
+
+  <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+  </script>
 </html>
